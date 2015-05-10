@@ -50,13 +50,10 @@ RUN chown 700 .ssh
 #set sshd config
 RUN mkdir -p /var/run/sshd && sed -i "s/UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/sshd_config && sed -i "s/UsePAM.*/UsePAM no/g" /etc/ssh/sshd_config && sed -i "s/PermitRootLogin.*/PermitRootLogin yes/g" /etc/ssh/sshd_config && sed -i "s/#AuthorizedKeysFile/AuthorizedKeysFile/g" /etc/ssh/sshd_config
 
-ADD run.sh /run.sh
-RUN chmod +x /*.sh
-
-ADD Dockerfile /Dockerfile
 
 EXPOSE 22
 EXPOSE 47761
 EXPOSE 47762
 
-CMD ["/run.sh"]
+#start sshd
+CMD [“exec”,“/usr/sbin/sshd”,“-D”]
