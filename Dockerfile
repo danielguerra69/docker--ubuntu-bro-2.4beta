@@ -3,7 +3,7 @@ FROM ubuntu
 MAINTAINER Daniel Guerra <daniel.guerra69@gmail.com>
 
 #prequisits
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive
+#RUN apt-get update && DEBIAN_FRONTEND=noninteractive
 #RUN apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive 
 RUN apt-get update && apt-get -y  install libclick-0.4-dev ocl-icd-opencl-dev libboost-dev doxygen git libcurl4-gnutls-dev libgoogle-perftools-dev libgeoip-dev geoip-database rsync openssh-server pwgen cmake make gcc g++ flex bison libpcap-dev libssl-dev python-dev swig zlib1g-dev
 
