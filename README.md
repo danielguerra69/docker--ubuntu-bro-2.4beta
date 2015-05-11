@@ -1,2 +1,2 @@
 # docker--ubuntu-bro-2.4beta
-Docker ubuntu bro-2.4 elasticsearch kibana integration
+Docker ubuntu bro-2.4 elasticsearch kibana integration.
