@@ -19,7 +19,7 @@ RUN make install
 
 # ipsumdump
 WORKDIR /tmp
-RUN git clone —recursive https://github.com/kohler/ipsumdump.git
+RUN git clone --recursive https://github.com/kohler/ipsumdump.git
 WORKDIR /tmp/ipsumdump
 RUN ./configure
 RUN make
