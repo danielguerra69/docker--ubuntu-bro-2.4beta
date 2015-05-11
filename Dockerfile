@@ -29,7 +29,9 @@ RUN make install
 WORKDIR /tmp
 RUN git clone --recursive https://github.com/facebook/rocksdb.git
 WORKDIR /tmp/rocksdb
-RUN make
+RUN make shared_lib
+RUN make check
+RUN make all
 RUN make install
 
 #bro 2.4beta
