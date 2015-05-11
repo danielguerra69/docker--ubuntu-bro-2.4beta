@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:14.04
 # Bro 2.4beta 
 MAINTAINER Daniel Guerra <daniel.guerra69@gmail.com>
 
