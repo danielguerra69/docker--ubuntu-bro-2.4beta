@@ -57,4 +57,4 @@ EXPOSE 47761
 EXPOSE 47762
 
 #start sshd
-CMD [“exec”,“/usr/sbin/sshd”,“-D”]
+CMD [exec,/usr/sbin/sshd,-D]
